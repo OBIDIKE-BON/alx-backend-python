@@ -21,10 +21,8 @@ async def async_squares(par):
         if n > 20:
             break
 
-
 async def main():
     batch = asyncio.gather(async_squares(2), async_squares(3))
     await batch
-
 
 asyncio.run(main())
